@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing</title>
+    <style>
+        /* CSS Code */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f8fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #0073e6;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .benefits, .types {
+            margin-top: 20px;
+        }
+
+        .benefits ul, .types ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .benefits ul li, .types ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .benefits ul li img, .types ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .info-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .info-btn:hover {
+            background-color: #005bb5;
+        }
+
+        .extra-info {
+            display: none;
+            margin-top: 20px;
+            background-color: #e8f4ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Introduction Image -->
+        <img src="https://via.placeholder.com/800x200.png?text=Cloud+Computing" alt="Cloud Computing Introduction Image">
+
+        <h1>Introduction to Cloud Computing</h1>
+        <p>Cloud computing is a technology that allows individuals and organizations to access and store data, applications, and resources over the internet instead of on local servers or personal devices. It offers scalable resources that can be adjusted based on demand, providing a flexible and cost-effective solution for modern computing needs.</p>
+
+        <section class="benefits">
+            <h2>Benefits of Cloud Computing</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=💸" alt="Cost Savings Icon">
+                    <strong>Cost Savings:</strong> Reduces the need for physical hardware and minimizes operational costs.
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=📈" alt="Scalability Icon">
+                    <strong>Scalability:</strong> Allows for easy scaling of resources up or down depending on usage needs.
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=🌐" alt="Accessibility Icon">
+                    <strong>Accessibility:</strong> Enables access to applications and data from any device with an internet connection.
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=🔒" alt="Reliability Icon">
+                    <strong>Reliability:</strong> Offers backup and disaster recovery options that enhance data reliability.
+                </li>
+            </ul>
+        </section>
+
+        <section class="types">
+            <h2>Types of Cloud Computing</h2>
+            <ul>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=🌥" alt="Public Cloud Icon">
+                    <strong>Public Cloud:</strong> Services are provided over the internet and shared among multiple organizations.
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=🔐" alt="Private Cloud Icon">
+                    <strong>Private Cloud:</strong> Resources are exclusively used by a single organization, providing higher security.
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/30.png?text=🌦" alt="Hybrid Cloud Icon">
+                    <strong>Hybrid Cloud:</strong> Combines public and private clouds to offer greater flexibility and optimized resources.
+                </li>
+            </ul>
+        </section>
+
+        <button class="info-btn" onclick="toggleInfo()">Learn More</button>
+
+        <div id="extra-info" class="extra-info">
+            <img src="https://via.placeholder.com/800x200.png?text=How+Cloud+Computing+Works" alt="How Cloud Computing Works">
+            <h2>How Cloud Computing Works</h2>
+            <p>Cloud computing uses a network of remote servers hosted on the internet to store, manage, and process data. Providers offer various cloud services that can include infrastructure, platforms, or software as services (IaaS, PaaS, SaaS) which users can access remotely, paying only for the resources they need.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Code
+
+        function toggleInfo() {
+            const info = document.getElementById("extra-info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
